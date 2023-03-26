@@ -21,7 +21,7 @@ Once you have started the server, you should be able to view the SyncFrame websi
 
 ## Deploying with Docker
 
-LoveFrame can also be deployed using Docker. To do this, follow these steps:
+SyncFrame can also be deployed using Docker. To do this, follow these steps:
 
 1. Install [Docker](https://www.docker.com/).
 2. Clone this repository to your local machine.
