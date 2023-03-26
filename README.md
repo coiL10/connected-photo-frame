@@ -16,6 +16,9 @@ To get started with LoveFrame, you will need to follow these steps:
 
 Once you have started the server, you should be able to view the SyncFrame website by navigating to `http://localhost:3000` in your web browser.
 
+**Note:** It is possible to retrieve the Telegram Bot token through the source code of the website. This is a security issue if you don't make sure that the website is only accessible for authorized users.
+
+
 ## Deploying with Docker
 
 LoveFrame can also be deployed using Docker. To do this, follow these steps:
