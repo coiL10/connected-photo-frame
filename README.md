@@ -32,7 +32,7 @@ SyncFrame can also be deployed using Docker. To do this, follow these steps:
 
 ## Usage
 
-To use LoveFrame, follow these steps:
+To use SyncFrame, follow these steps:
 
 1. Send a photo to your Telegram bot, along with the global password that you set earlier. The password should be sent as the caption of the photo.
 2. The photo will be displayed on the LoveFrame website in real time, along with its caption.
