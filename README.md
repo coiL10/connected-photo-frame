@@ -4,7 +4,7 @@ SyncFrame is a simple web application that displays photos with captions in real
 
 ## Getting started
 
-To get started with LoveFrame, you will need to follow these steps:
+To get started with SyncFrame, you will need to follow these steps:
 
 1. Clone this repository to your local machine.
 2. Install [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/).
@@ -32,7 +32,7 @@ SyncFrame can also be deployed using Docker. To do this, follow these steps:
 
 To use SyncFrame, follow these steps:
 
-1. Send a photo to your Telegram bot, along with the global password that you set earlier. The password should be sent as the caption of the photo.
+1. Send a photo to your Telegram bot, if it is the first time, you need to enter the password as a text message.
 2. The photo will be displayed on the LoveFrame website in real time, along with its caption.
 
 ## License
