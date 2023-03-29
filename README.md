@@ -34,7 +34,3 @@ To use SyncFrame, follow these steps:
 
 1. Send a photo to your Telegram bot, if it is the first time, you need to enter the password as a text message.
 2. The photo will be displayed on the SyncFrame website in real time, along with its caption.
-
-## License
-
-This project is licensed under the terms of the MIT license. See [LICENSE](LICENSE) for more information.
