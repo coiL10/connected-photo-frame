@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LoveFrame</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+    }
+
+    #photo-container {
+      position: relative;
+      height: 100vh;
+    }
+
+    img {
+      height:100%;
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    #photo-caption {
+      position: absolute;
+      bottom: 5%;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 10px;
+      font-size: 32px;
+      font-family: 'Brush Script MT', cursive;
+      text-shadow: 2px 2px black;
+      text-align: center;
+      margin: 0;
+      max-width: 100%;
+      max-height: 50%;
+      overflow-y: auto;
+      word-wrap: break-word;
+    }
+
+    #photo-caption:empty {
+      background-color: transparent;
+    }
+
+
+@media screen and (max-width: 768px) {
+  #photo-caption {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #photo-caption {
+    font-size: 18px;
+  }
+}
+  </style>
+</head>
+<body>
+  <div id="photo-container">
+    <img id="photo" />
+    <div id="photo-caption"></div>
+  </div>
+
+  <script>
+    const socket = io();
+    
+    // Get the last photo displayed from local storage
+    const lastPhoto = localStorage.getItem('lastPhoto');
+    const lastMessage = localStorage.getItem('lastMessage');
+    if (lastPhoto) {
+      $('#photo').attr('src', lastPhoto);
+    }
+
+    if (lastMessage) {
+      $('#photo-caption').text(lastMessage);
+    }
+
+    socket.on('newPhoto', (data) => {
+      $('#photo').attr('src', `${data.photo}`);
+      console.warn(data);
+      $('#photo-caption').text(data.message);
+
+      // Store the path of the last photo displayed in local storage
+      localStorage.setItem('lastPhoto', `${data.photo}`);
+      localStorage.setItem('lastMessage', data.message);
+    });
+  </script>
+
+</body>
+</html>
