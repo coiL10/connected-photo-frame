@@ -26,15 +26,11 @@ SyncFrame can also be deployed using Docker. To do this, follow these steps:
 3. Navigate to the root directory of the repository.
 4. Build the Docker image by running `docker build -t syncframe .`.
 5. Start a container from the image by running `docker run -p 3000:3000 -e BOT_TOKEN=<your_bot_token> -e GLOBAL_PASSWORD=<your_global_password> syncframe`.
-6. Once the container is running, you should be able to view the LoveFrame website by navigating to `http://localhost:3000` in your web browser.
+6. Once the container is running, you should be able to view the SyncFrame website by navigating to `http://localhost:3000` in your web browser.
 
 ## Usage
 
 To use SyncFrame, follow these steps:
 
 1. Send a photo to your Telegram bot, if it is the first time, you need to enter the password as a text message.
-2. The photo will be displayed on the LoveFrame website in real time, along with its caption.
-
-## License
-
-This project is licensed under the terms of the MIT license. See [LICENSE](LICENSE) for more information.
+2. The photo will be displayed on the SyncFrame website in real time, along with its caption.
