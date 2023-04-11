@@ -2,7 +2,11 @@
 
 SyncFrame is a simple web application that displays photos with captions in real time. The photos are sent to the application through a Telegram bot, which allows anyone to send photos to the application from their phone.
 
+![Example](32D88F3D-ECE9-4729-AF0A-C2E77725DB78.jpeg)
+<figcaption align = "center"><b>Example using 2 Raspberry Pis in Kiosk Mode</b></figcaption>
+
 ## Getting started
+
 
 To get started with SyncFrame, you will need to follow these steps:
 
