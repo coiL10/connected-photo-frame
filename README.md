@@ -45,3 +45,8 @@ To use SyncFrame, follow these steps:
 ## Upcoming features
 
 1. Adding support for video
+
+
+## License
+
+See the [LICENSE](https://github.com/coiL10/syncframe-lovebox/blob/main/LICENSE) file.
